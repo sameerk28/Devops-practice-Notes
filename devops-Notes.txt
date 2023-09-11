@@ -1,0 +1,33 @@
+#Tomcat username add lines in conf/tomcat-user.xml
+
+
+<role rolename="manager-gui"/>
+ <role rolename="manager-script"/>
+ <role rolename="manager-jmx"/>
+ <role rolename="manager-status"/>
+ <user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+ <user username="deployer" password="deployer" roles="manager-script"/>
+ <user username="tomcat" password="s3cret" roles="manager-gui"/>
+
+
+#Quick setup — if you’ve done this kind of thing before
+or
+
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+echo "# Devops-Notes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sameerk28/Devops-Notes.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/sameerk28/Devops-Notes.git
+git branch -M main
+git push -u origin main
+
+
